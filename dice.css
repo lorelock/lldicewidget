@@ -55,16 +55,20 @@
     top: 25%;
 }
 
-#selector_div button {
-    width: 50%; /* Make each button take up 50% of the width */
-    background-color: rgba(0, 0, 0, 0); /* Make the background fully transparent */
-    border: none; /* Remove the border */
-    color: rgba(245, 245, 247, 0.8); /* Adjust text color opacity if needed */
-    float: left; /* Align buttons side by side */
+#selector_div {
+    display: flex;
+    width: 100%;
 }
 
-#throw {
-    float: right; /* Align the "Throw" button to the right */
+#selector_div button {
+    width: 50%; /* Each button takes up 50% of the width */
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+    border: none; /* Remove borders */
+    color: black; /* Set text color to black */
+    text-align: center; /* Center text horizontally */
+    padding: 15px 0; /* Center text vertically by adjusting padding */
+    font-size: 20pt;
+    cursor: pointer;
 }
 
 .dice_place {

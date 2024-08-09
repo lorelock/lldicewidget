@@ -107,7 +107,7 @@ function dice_initialize(container) {
         return $t.dice.parse_notation(set.value);
     }
 
-function after_roll(notation, result) {
+    function after_roll(notation, result) {
         if (params.chromakey || params.noresult) return;
         var res = result.join(' + ');
         if (notation.constant) {

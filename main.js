@@ -107,7 +107,23 @@ function dice_initialize(container) {
         return $t.dice.parse_notation(set.value);
     }
 
+function after_roll(notation, result) {
+        if (params.chromakey || params.noresult) return;
+        var res = result.join(' + ');
+        if (notation.constant) {
+            res += ' (';
+            if (notation.constant > 0) res += '+' + notation.constant;
+            else res += '-' + Math.abs(notation.constant);
+            res += ')';
+        }
+        if (result.length > 1) res += ' = ' + 
+                (result.reduce(function(s, a) { return s + a; }) + notation.constant);
+        label.innerHTML = res;
+        info_div.style.display = 'inline-block';
+    }
 
+    box.bind_mouse(container, notation_getter, before_roll, after_roll);
+    box.bind_throw($t.id('throw'), notation_getter, before_roll, after_roll);
 
     $t.bind(container, ['mouseup', 'touchend'], function(ev) {
         ev.stopPropagation();

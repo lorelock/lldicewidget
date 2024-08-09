@@ -739,7 +739,7 @@
                 new THREE.MeshPhongMaterial(that.selector_back_colors));
         this.pane.receiveShadow = true;
         this.pane.position.set(0, 0, 1);
-        this.scene.add(this.pane);
+       // this.scene.add(this.pane);
 
         var mouse_captured = false;
 

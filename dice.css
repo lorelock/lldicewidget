@@ -66,9 +66,12 @@
     border: none; /* Remove borders */
     color: black; /* Set text color to black */
     text-align: center; /* Center text horizontally */
-    padding: 15px 0; /* Center text vertically by adjusting padding */
-    font-size: 20pt;
+    padding: 15px 0; /* Adjust padding to center text vertically */
+    font-size: 20pt; /* Font size for the button text */
     cursor: pointer;
+    display: flex;
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
 }
 
 .dice_place {

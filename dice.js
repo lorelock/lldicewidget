@@ -271,12 +271,12 @@
 
     this.material_options = {
         specular: 0x172022,
-        color: 0xf0f0f0,
+        color: 0xf5f5f7,
         shininess: 40,
         shading: THREE.FlatShading,
     };
     this.label_color = '#aaaaaa';
-    this.dice_color = '#202020';
+    this.dice_color = '#e70014';
     this.ambient_light_color = 0xf0f5fb;
     this.spot_light_color = 0xefdfd5;
     this.selector_back_colors = { color: 0x404040, shininess: 0, emissive: 0x858787 };

@@ -61,7 +61,7 @@
 }
 
 #selector_div button {
-    width: 50%; /* Each button takes up 50% of the width */
+    width: 100%; /* Each button takes up 100% of the width */
     background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
     border: none; /* Remove borders */
     color: black; /* Set text color to black */

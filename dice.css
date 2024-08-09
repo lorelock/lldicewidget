@@ -56,13 +56,15 @@
 }
 
 #selector_div button {
-    font-size: 20pt;
-    color: rgb(245, 245, 247);
-    background-color: rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    border: none;
-    width: 5em;
-    top: 62%;
+    width: 50%; /* Make each button take up 50% of the width */
+    background-color: rgba(0, 0, 0, 0); /* Make the background fully transparent */
+    border: none; /* Remove the border */
+    color: rgba(245, 245, 247, 0.8); /* Adjust text color opacity if needed */
+    float: left; /* Align buttons side by side */
+}
+
+#throw {
+    float: right; /* Align the "Throw" button to the right */
 }
 
 .dice_place {

@@ -30,7 +30,7 @@ function dice_initialize(container) {
     var params = $t.get_url_params();
 
     if (params.chromakey) {
-        $t.dice.desk_color = 0x00ff00;
+        $t.dice.desk_color = 0xf5f5f7;
         info_div.style.display = 'none';
         $t.id('control_panel').style.display = 'none';
     }
